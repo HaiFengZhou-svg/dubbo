@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: dubbo-provider
+#  main:
+#    allow-bean-definition-overriding: true
+dubbo:
+  scan:
+    base-packages: com.qf.clouddubbo.provider
+  protocol:
+    name: dubbo
+    port: -1
+    serialization: kryo
+  registry:
+    address: nacos://192.168.110.131:8848
+server:
+  port: 0
